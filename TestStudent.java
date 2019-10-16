@@ -53,13 +53,6 @@ public class TestStudent {
 		result = false;
 		assertEquals(expected, actual);
 
-
-
-		
-		
-		
-
-
 	}
 	
 	@Test
@@ -71,6 +64,21 @@ public class TestStudent {
 		Student s = new Student(firstName, lastName, rating);
 		Integer actual = s.getRating();
 		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void testCompare() throws NameException {
+		Student firstStudent = new Student("A", "B", 2);
+		Student secondStudent = new Student("A", "C", 3);
+		Student student = new Student("A", "A", 5);
+		Student empty = new Student("Z", "", 3);
+		Student secondEmpty = new Student("x", "", 3);
+		
+		CompareLastFirstName clfn = new CompareLastFirstName();
+		clfn.compare(firstStudent, secondStudent);
+		
+		
+
 	}
 
 }
