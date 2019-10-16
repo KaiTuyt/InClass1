@@ -19,5 +19,8 @@ public abstract class NameHolder {
 	protected  String getFirstName() {
 		return new String(firstName);
 	}
+	
+	
+
 
 }

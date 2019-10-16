@@ -17,6 +17,9 @@ public class Person extends NameHolder {
 		super.setFirstName(firstName);
 	}
 	
+	protected  String getLastName() {
+		return new String(lastName);
+	}
 	
 	@Override
 	public String describeSelf() {
